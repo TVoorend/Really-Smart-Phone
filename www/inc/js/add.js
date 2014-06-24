@@ -26,11 +26,11 @@ window.onload = function () {
         var longitude = position.coords.longitude;
         long.push(longitude);
         localStorage.setItem('longitude', JSON.stringify(long));
-        console.log(lat, long, names)
+        console.log(lat, long, names);
 
         alert('Your location is saved!');
         window.location.replace("list.html");
     }
 
     document.getElementById('saveData').onclick = initCoords;
-}
+};
